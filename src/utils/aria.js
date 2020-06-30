@@ -8,7 +8,7 @@ import { toArray } from './utils.js'
 // reader’s list of elements (headings, form controls, landmarks, etc.) in the document.
 
 export const setAriaHidden = () => {
-  const bodyChildren = toArray(document.body.children)
+  /*const bodyChildren = toArray(document.body.children)
   bodyChildren.forEach(el => {
     if (el === getContainer() || contains(el, getContainer())) {
       return
@@ -18,11 +18,11 @@ export const setAriaHidden = () => {
       el.setAttribute('data-previous-aria-hidden', el.getAttribute('aria-hidden'))
     }
     el.setAttribute('aria-hidden', 'true')
-  })
+  })*/
 }
 
 export const unsetAriaHidden = () => {
-  const bodyChildren = toArray(document.body.children)
+  /*const bodyChildren = toArray(document.body.children)
   bodyChildren.forEach(el => {
     if (el.hasAttribute('data-previous-aria-hidden')) {
       el.setAttribute('aria-hidden', el.getAttribute('data-previous-aria-hidden'))
@@ -30,5 +30,5 @@ export const unsetAriaHidden = () => {
     } else {
       el.removeAttribute('aria-hidden')
     }
-  })
+  })*/
 }
